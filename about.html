@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxeGlow | About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Poppins"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              light: '#fce7f3',
+              main: '#db2777',
+              dark: '#831843',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+  <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex-shrink-0 flex items-center">
+          <i class="bi bi-gem text-brand-main text-3xl mr-2"></i>
+          <span class="font-serif text-2xl font-bold text-gray-900">LuxeGlow</span>
+        </a>
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="text-gray-700 hover:text-brand-main font-medium transition">Home</a>
+          <a href="products.html" class="text-gray-700 hover:text-brand-main font-medium transition">Shop</a>
+          <a href="about.html" class="text-brand-main font-semibold transition">About Us</a>
+          <a href="contact.html" class="text-gray-700 hover:text-brand-main font-medium transition">Contact</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-6">
+          <button class="text-gray-600 hover:text-brand-main transition"><i class="bi bi-search text-xl"></i></button>
+          <a href="login.html" class="text-gray-600 hover:text-brand-main transition"><i class="bi bi-person text-xl"></i></a>
+          <button class="text-gray-600 hover:text-brand-main transition relative">
+            <i class="bi bi-bag text-xl"></i>
+            <span class="absolute -top-2 -right-2 bg-brand-main text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+          </button>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-main focus:outline-none">
+            <i class="bi bi-list text-3xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <a href="index.html" class="block py-3 px-4 text-gray-700 hover:bg-pink-50">Home</a>
+      <a href="products.html" class="block py-3 px-4 text-gray-700 hover:bg-pink-50">Shop</a>
+      <a href="about.html" class="block py-3 px-4 text-gray-700 hover:bg-pink-50">About Us</a>
+      <a href="contact.html" class="block py-3 px-4 text-gray-700 hover:bg-pink-50">Contact</a>
+      <a href="login.html" class="block py-3 px-4 text-gray-700 hover:bg-pink-50">Login</a>
+    </div>
+  </nav>
+
+  <main class="pt-28">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1556228720-1957be83f3e2?q=80&w=2574&auto=format&fit=crop" alt="Team" class="rounded-2xl shadow-2xl w-full h-[520px] object-cover">
+          <div class="absolute -bottom-6 -right-6 bg-brand-main text-white p-6 rounded-xl shadow-lg hidden md:block">
+            <p class="text-3xl font-bold">5+</p>
+            <p class="text-sm">Years Experience</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-brand-main font-semibold tracking-widest uppercase mb-2">Who We Are</h4>
+          <h1 class="text-4xl font-serif font-bold text-gray-900 mb-6">Beauty with a Conscience</h1>
+          <p class="text-gray-600 leading-relaxed mb-6">LuxeGlow crafts effective, gentle formulas powered by nature and backed by science. We choose ethically sourced ingredients, minimize waste, and never test on animals.</p>
+          <p class="text-gray-600 leading-relaxed mb-6">Every product reflects our commitment to clean beauty and radiant skin. From packaging to production, we strive for sustainability and transparency.</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
+            <div class="p-5 bg-white rounded-xl shadow">
+              <div class="w-12 h-12 bg-pink-100 text-brand-main rounded-full flex items-center justify-center mb-3"><i class="bi bi-leaf"></i></div>
+              <p class="font-semibold text-gray-900">100% Organic</p>
+            </div>
+            <div class="p-5 bg-white rounded-xl shadow">
+              <div class="w-12 h-12 bg-pink-100 text-brand-main rounded-full flex items-center justify-center mb-3"><i class="bi bi-heart"></i></div>
+              <p class="font-semibold text-gray-900">Cruelty Free</p>
+            </div>
+            <div class="p-5 bg-white rounded-xl shadow">
+              <div class="w-12 h-12 bg-pink-100 text-brand-main rounded-full flex items-center justify-center mb-3"><i class="bi bi-recycle"></i></div>
+              <p class="font-semibold text-gray-900">Sustainable</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pb-16">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-serif font-bold text-gray-900">Our Promise</h2>
+        <div class="w-20 h-1 bg-brand-main mx-auto mt-4"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded-xl shadow">
+          <h3 class="font-serif text-xl font-bold text-gray-900 mb-2">Clean Ingredients</h3>
+          <p class="text-gray-600">No parabens, sulfates, or harsh additives. Only skin-loving components.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow">
+          <h3 class="font-serif text-xl font-bold text-gray-900 mb-2">Transparent Labels</h3>
+          <p class="text-gray-600">Clear, honest descriptions so you always know what you put on your skin.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow">
+          <h3 class="font-serif text-xl font-bold text-gray-900 mb-2">Real Results</h3>
+          <p class="text-gray-600">Formulas created with dermatologists to deliver visible, lasting glow.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div class="flex items-center">
+          <i class="bi bi-gem text-brand-main text-2xl mr-2"></i>
+          <span class="font-serif text-xl font-bold text-gray-900">LuxeGlow</span>
+        </div>
+        <div class="flex gap-6 text-gray-600">
+          <a href="index.html" class="hover:text-brand-main">Home</a>
+          <a href="products.html" class="hover:text-brand-main">Shop</a>
+          <a href="about.html" class="hover:text-brand-main">About</a>
+          <a href="contact.html" class="hover:text-brand-main">Contact</a>
+        </div>
+        <div class="flex gap-4 text-gray-600">
+          <a href="#" class="hover:text-brand-main"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="hover:text-brand-main"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="hover:text-brand-main"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+      <p class="text-center text-sm text-gray-400 mt-6">© <span id="year"></span> LuxeGlow. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
